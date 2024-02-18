@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Inter:wght@400;700;800&family=Poppins:wght@600&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <div class="container">
+     <header>spli<br> tter</header>
+
+      <div class="hero-wrapper">
+           <div class="hero-left">
+              <form action="" method="get">
+               <label for="bill">bill</label>
+               <div class="input-box">
+                <span class="icons">$</span>
+                <input class="billInput" type="number" name="" id="">
+              </div>
+              </form>
+
+              <h6>Select Tip %</h6>
+              <div class="selectTipsBtn">
+              <div class="perBtn tips5%">5%</div>
+              <div class="perBtn tips10%">10%</div>
+              <div class="perBtn tips15% active-tip">15%</div>
+              <div class="perBtn tips25%">25%</div>
+              <div class="perBtn tips50%">50%</div>
+              <div  class="custom "><input type="number"  class="tipscustom" placeholder="CUSTOM"></div>
+           </div>
+
+            <form action="">
+              <div class="people-lable">
+
+              <label for="numOfPeople">number of people</label>
+              <label class="error" for="error">can't be zero</label>
+              </div>
+
+              <div class="input-box">
+                <i class="fa fa-user icons" aria-hidden="true"></i>
+                <input class="peopleInput" type="number" name="name">
+              </div>
+              
+              
+            </form>
+        </div>
+       
+
+      <div class="hero-right">
+        <div class="tipAmount sec">
+          <p>tip Amount <br><span>/ person</span></p> 
+          <p class="price amount">$0</p>
+        </div>
+
+        <div class="totalAmount sec">
+          <p>total <br><span>/ person</span></p> 
+          <p class="person price">$0</p>
+        </div>
+ 
+        <button class="resetBtn" type="reset">Reset</button>
+     </div>
+   </div>
+ </div>
+
+  
+ <div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">oluwaseun</a>.
+</div>
+  <script src="script.js"></script>
+ 
+</body>
+</html>

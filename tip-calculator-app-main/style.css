@@ -1,0 +1,242 @@
+:root{
+--Verydarkcyan: hsl(183, 100%, 15%);
+--Darkgrayishcyan: hsl(186, 14%, 43%);
+--Grayishcyan: hsl(184, 14%, 56%);
+--Lightgrayishcyan: hsl(185, 41%, 84%);
+--Verylightgrayishcyan: hsl(189, 41%, 97%);
+--White:hsl(0, 0%, 100%);
+--Strongcyan: hsl(172, 67%, 45%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Space Mono',monospace;
+    font-weight: 700;
+    background: var(--Lightgrayishcyan);
+    position: relative;
+    
+}
+
+header{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--Darkgrayishcyan);
+    letter-spacing: 0.5em;
+
+    
+   
+}
+.hero-wrapper{
+   width: 60%;
+   height:52vh ;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   gap:0 30px;
+   background: var(--White);
+   padding: 20px;
+   border-radius: 20px;
+}
+.hero-left{
+    width: 100%;
+    height:100% ;
+}
+
+form label{
+    text-transform: capitalize;
+    color: var(--Darkgrayishcyan);
+    display: block;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.people-lable{
+    display: flex;
+    justify-content: space-between;
+}
+.error{
+    font-size: 16px;
+    color: red;
+    display:none;
+}
+.input-box{
+    border: none;
+    background: var(--Verylightgrayishcyan);
+    display: flex;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+
+    
+}
+input{
+    outline: none;
+    border: none;
+    background: var(--Verylightgrayishcyan);
+    padding: 5px;
+    font-size: 20px;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+    
+}
+.icons{
+    font-size: 15pxpx;
+    color: var(--Lightgrayishcyan);
+    padding: 5px;
+}
+h6{
+    font-size: 16px;
+    color: var(--Darkgrayishcyan);
+    margin: 15px 0;
+}
+.selectTipsBtn{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin: 25px 0;
+}
+.perBtn{
+    background: var(--Verydarkcyan);
+    color: var(--White);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight:200;
+    cursor: pointer;
+}
+.active-tip{
+    background-color: var(--Strongcyan);
+    color: var(--Lightgrayishcyan);
+}
+.perBtn:hover{
+    background-color: var(--Strongcyan);
+    color: var(--Lightgrayishcyan);
+
+}
+.custom input{
+    background: var(--Verylightgrayishcyan);
+    color: var(--Strongcyan);
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+.custom input ::placeholder{
+    color: var(--Verydarkcyan);
+}
+
+.hero-right{
+    background: var(--Verydarkcyan);
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    position: relative;
+    border-radius: 10px;
+    
+}
+.sec{
+    display: flex;
+    justify-content: space-between;
+    color: var(--Verylightgrayishcyan);
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+.sec span{
+    font-size: 10px;
+    color: var(--Grayishcyan);
+}
+.price{
+    color: var(--Strongcyan);
+    font-size: 30px;
+    overflow: hidden;
+    
+
+}
+button{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    right: 20%;
+    border-radius: 3px;
+    border: none;
+    outline: 0;
+    text-transform: uppercase;
+    padding: 10px  0;
+    background: var(--Strongcyan);
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: var(--Verylightgrayishcyan);
+    color: var(--Strongcyan);
+}
+    
+.attribution { font-size: 11px; text-align: center; margin-top: 20px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media screen  and (max-width:600px ){
+   
+    header{
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color: var(--Darkgrayishcyan);
+        letter-spacing: 0.5em;
+        margin: 20px auto;
+    
+        
+       
+    }
+    .hero-wrapper{
+        width: 90%;
+        display: block;
+        align-items: center;
+        background: var(--White);
+        padding: 20px;
+        border-radius: 20px;
+        height: 45%;
+     }
+     .hero-left{
+      margin-bottom: 40px;
+    
+    }
+    .hero-right{
+        background: var(--Verydarkcyan);
+        width: 100%;
+        position: relative;
+        border-radius: 10px;
+        height: 45%;
+        padding-bottom: 50px;
+    
+        
+    }
+    .sec{
+        display: flex;
+        justify-content: space-between;
+        color: var(--Verylightgrayishcyan);
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+    button{
+        border-radius: 3px;
+        border: none;
+        outline: 0;
+        text-transform: uppercase;
+        padding: 5px  10px;
+        background: var(--Strongcyan);
+        font-weight: bolder;
+        cursor: pointer;
+        width: 90%;
+        top: 80%;
+        left: 5%;
+    }
+}
